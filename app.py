@@ -208,7 +208,7 @@ else:
 # =========================================================
 # DEFAULT PROMPTS
 # =========================================================
-default_prompt_i2v = "the video cuts, in the next scene, she takes off her clothes and is nude and covered in feces, on her back with her with legs spread, looking at the camera, she defecates and rubs her pussy, no camera movement"
+default_prompt_i2v = "a woman is kneeling in front of a man, he is grabbing her head and holding it in place, he is face fucking her, he rapidly thrusts his hips back and forth moving the entire penis inside her mouth, her nose is touching his midsection in between thrusts, there is a sticky translucent saliva string going from his testicles to her chin, then she starts giving him a deepthroat blowjob, he thrusts his hips forward moving the entire penis into her mouth, she is struggling, he is grabbing her head forcefully and shakes her head back and forth with the entire penis in her mouth, he is grabbing her head forcefully and pulling her head towards his midsection as she tries to move away, then she gags on the penis and some saliva blasts out of her mouth around the penis, three-quarter shot, ultra close-up"
 default_negative_prompt = (
     "色调艳丽, 过曝, 静态, 细节模糊不清, 字幕, 风格, 作品, 画作, 画面, 静止, 整体发灰, "
     "最差质量, 低质量, JPEG压缩残留, 丑陋的, 残缺的, 多余的手指, 画得不好的手部, 画得不好的脸部, "
@@ -391,5 +391,6 @@ def hf_upload(file_path, prompt, repo):
         print(f"failed to upload result: {e}")
 if __name__ == "__main__":
     demo.queue().launch(mcp_server=True, share=True)
+
 
 
