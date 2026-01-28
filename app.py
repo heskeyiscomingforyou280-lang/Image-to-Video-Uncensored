@@ -122,8 +122,8 @@ pipe = WanImageToVideoPipeline.from_pretrained(
 # LOAD LORA ADAPTERS
 # =========================================================
 pipe.load_lora_weights(
-    "heskeyiscoming/facesit",
-    weight_name="I2V-WAN2.2-POVFaceSitting-2.0-HighNoise_-000032.safetensors",
+    "heskeyiscoming/squirt",
+    weight_name="Pornmaster_wan 2.2_14b_I2V_ Squirt_Queen_v1.1_high_noise.safetensors",
     adapter_name="i2v_scat"
 )
 pipe.load_lora_weights(
@@ -133,8 +133,8 @@ pipe.load_lora_weights(
 )
 
 pipe.load_lora_weights(
-    "heskeyiscoming/facesit",
-    weight_name="I2V-WAN2.2-POVFaceSitting-2.0-LowNoise_-000020.safetensors",
+    "heskeyiscoming/squirt",
+    weight_name="Pornmaster_wan 2.2_14b_I2V_ Squirt_Queen_v1.1_low_noise.safetensors",
     adapter_name="i2v_scat_2",
     load_into_transformer_2=True
 )
@@ -391,6 +391,7 @@ def hf_upload(file_path, prompt, repo):
         print(f"failed to upload result: {e}")
 if __name__ == "__main__":
     demo.queue().launch(mcp_server=True, share=True)
+
 
 
 
