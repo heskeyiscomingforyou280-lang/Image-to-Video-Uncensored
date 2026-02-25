@@ -122,8 +122,8 @@ pipe = WanImageToVideoPipeline.from_pretrained(
 # LOAD LORA ADAPTERS
 # =========================================================
 pipe.load_lora_weights(
-    "heskeyiscoming/cumwalk",
-    weight_name="cum_walk_000000410_high_noise.safetensors",
+    "heskeyiscoming/wood",
+    weight_name="morning_wood_000000200_high_noise.safetensors",
     adapter_name="i2v_scat"
 )
 pipe.load_lora_weights(
@@ -147,7 +147,7 @@ pipe.load_lora_weights(
 
 
 pipe.set_adapters([ "i2v_scat","lightx2v","i2v_scat_2","lightx2v_2"], adapter_weights=[0.95, 0.9, 0.95, 0.9])
-pipe.fuse_lora(adapter_names=["i2v_scat","lightx2v"], lora_scale=1., components=["transformer"])
+pipe.fuse_lora(adapter_names=["i2v_scat","lightx2v"], lora_scale=1.5., components=["transformer"])
 pipe.fuse_lora(adapter_names=["i2v_scat_2","lightx2v_2"], lora_scale=1., components=["transformer_2"])
 pipe.unload_lora_weights()
 
@@ -391,6 +391,7 @@ def hf_upload(file_path, prompt, repo):
         print(f"failed to upload result: {e}")
 if __name__ == "__main__":
     demo.queue().launch(mcp_server=True, share=True)
+
 
 
 
