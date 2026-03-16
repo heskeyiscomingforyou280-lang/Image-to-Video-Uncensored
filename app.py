@@ -122,8 +122,8 @@ pipe = WanImageToVideoPipeline.from_pretrained(
 # LOAD LORA ADAPTERS
 # =========================================================
 pipe.load_lora_weights(
-    "heskeyiscoming/cumshot",
-    weight_name="CloseUpFacialCum-v10_High.safetensors",
+    "heskeyiscoming/lyingblow",
+    weight_name="Make_em_lyingsck_high_noise_wan2.2_14b_i2v.safetensors",
     adapter_name="i2v_scat"
 )
 pipe.load_lora_weights(
@@ -133,8 +133,8 @@ pipe.load_lora_weights(
 )
 
 pipe.load_lora_weights(
-    "heskeyiscoming/cumshot",
-    weight_name="CloseUpFacialCum-v10_Low.safetensors",
+    "heskeyiscoming/lyingblow",
+    weight_name="Make_em_lyingsck_low_noise_wan2.2_14b_i2v.safetensors",
     adapter_name="i2v_scat_2",
     load_into_transformer_2=True
 )
