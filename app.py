@@ -122,8 +122,8 @@ pipe = WanImageToVideoPipeline.from_pretrained(
 # LOAD LORA ADAPTERS
 # =========================================================
 pipe.load_lora_weights(
-    "heskeyiscoming/reacharound",
-    weight_name="rahj420e109high.safetensors",
+    "heskeyiscoming/spank",
+    weight_name="depantsing_spanking_high.safetensors",
     adapter_name="i2v_scat"
 )
 pipe.load_lora_weights(
@@ -133,8 +133,8 @@ pipe.load_lora_weights(
 )
 
 pipe.load_lora_weights(
-    "heskeyiscoming/reacharound",
-    weight_name="rahj420e109low.safetensors",
+    "heskeyiscoming/spank",
+    weight_name="depantsing_spanking_low.safetensors",
     adapter_name="i2v_scat_2",
     load_into_transformer_2=True
 )
