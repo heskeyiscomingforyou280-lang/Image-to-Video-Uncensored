@@ -122,8 +122,8 @@ pipe = WanImageToVideoPipeline.from_pretrained(
 # LOAD LORA ADAPTERS
 # =========================================================
 pipe.load_lora_weights(
-    "heskeyiscoming/milk",
-    weight_name="milking_table_high_noise.safetensors",
+    "heskeyiscoming/deep",
+    weight_name="wan22-ultimatedeepthroat-i2v-102epoc-high-k3nk.safetensors",
     adapter_name="i2v_scat"
 )
 pipe.load_lora_weights(
@@ -133,8 +133,8 @@ pipe.load_lora_weights(
 )
 
 pipe.load_lora_weights(
-    "heskeyiscoming/dreampenis",
-    weight_name="DR34ML4Y_I2V_14B_LOW_V2.safetensors",
+    "heskeyiscoming/deep",
+    weight_name="wan22-ultimatedeepthroat-I2V-101epoc-low-k3nk.safetensors",
     adapter_name="i2v_scat_2",
     load_into_transformer_2=True
 )
