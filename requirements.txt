@@ -1,14 +1,18 @@
 git+https://github.com/linoytsaban/diffusers.git@wan22-loras
 
-transformers
-accelerate
+torch==2.3.1
+torchvision==0.18.1
+
+torchao==0.16.0
+
+transformers>=4.40.0
+accelerate>=0.30.0
 safetensors
 sentencepiece
-peft
+peft>=0.11.0
 ftfy
 imageio
 imageio-ffmpeg
 opencv-python
-torchao==0.11.0
 uuid
 spaces
