@@ -9,6 +9,6 @@ ftfy
 imageio
 imageio-ffmpeg
 opencv-python
-torchao==0.16.0
+torchao==0.11.0
 uuid
 spaces
